@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class DynamicWebTableWithPagination {
 
 
+    //dynamic web table handling
     public static void main(String[] args) {
 
         WebDriverManager.chromedriver().setup();
