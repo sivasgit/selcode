@@ -21,7 +21,8 @@ public class DynamicWebTableWithPagination {
         String text = driver.findElement(By.xpath("text")).getText();
         //to split the total pages written
 
-        int totalPages = Integer.valueOf(text.substring(text.indexOf("(") + 1, text.indexOf("pages") - 1));
+        int totalPages =
+                Integer.valueOf(text.substring(text.indexOf("(") + 1, text.indexOf("pages") - 1));
         System.out.println(totalPages);
         //xpath is dynamic. active page is showing as active span, normal page is showing as link
         for (int i = 1; i <= totalPages; i++) {
